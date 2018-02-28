@@ -1,28 +1,34 @@
 // Exercise #1
 const [,,...cheerTextArray] = process.argv;
+
+// If there is no value, set the default to JOHN DOE.
+if(cheerTextArray.length === 0) {
+    cheerTextArray[0] = "JOHN";
+    cheerTextArray[1] = "DOE";
+}
+
 const cheerText = cheerTextArray.reduce((ac, cv) => ac.toUpperCase() + cv.toUpperCase()); 
 
-const letterInterval = 100;
+const letterInterval = 1000;
 const vowelSounds = ["O", "H", "E", "N"]
 
+// Prints text into console log with delay
 const printDelayedText = (delay, text) => {
     setTimeout(() => {
         process.stdout.write(`${text}\n`);
     }, delay);
 }
 
-let letterIndex = 0;
-
-
-for(const letter of [...cheerText]){
-    letterIndex++;
+// Loops over cheer text lettesr and prints them out x seconds apart
+for(const letter of cheerText){
+    var letterIndex = typeof letterIndex === "undefined" ? 0 : letterIndex += 1;
 
     delayTime = letterInterval * letterIndex;
 
     printDelayedText(delayTime, `Give me ${vowelSounds.includes(letter) ? 'an' : 'a'} ${letter}!`)
 
     const {length: finalIndex} = cheerText;
-    if(letterIndex === finalIndex) {
+    if(letterIndex === (finalIndex-1)) {
         printDelayedText(delayTime+(letterInterval),  "What does that spell?");
         printDelayedText(delayTime+(letterInterval*2), `${cheerTextArray.join(" ")}!`);
     }
