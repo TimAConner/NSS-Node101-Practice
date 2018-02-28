@@ -4,7 +4,7 @@ This is basic Node.js practice done while attending the [Nashville Software Scho
 
 
 ## List of Exercises
-### Exercise #1 Requirements
+### Cheer.js Exercise #1 Requirements
     Create a file called `cheer.js` that performs a cheer, using a named passed to it. Use as many of these as you can, even if the code you write isn't as compact or 'efficient' as you would like. This is more about trying out some ES6 than being succinct.
 
     1. const and/or let
