@@ -22,14 +22,16 @@ const printDelayedText = (delay, text) => {
 // Loops over cheer text lettesr and prints them out x seconds apart
 for(const letter of cheerText){
     var letterIndex = typeof letterIndex === "undefined" ? 0 : letterIndex += 1;
-
     delayTime = letterInterval * letterIndex;
+    printDelayedText(delayTime, `Give me ${vowelSounds.includes(letter) ? 'an' : 'a'} ${letter.toUpperCase()}!`);
 
-    printDelayedText(delayTime, `Give me ${vowelSounds.includes(letter) ? 'an' : 'a'} ${letter}!`)
-
+    
     const {length: finalIndex} = cheerText;
-    if(letterIndex === (finalIndex-1)) {
+    const isPenultimateIndex = () => letterIndex === (finalIndex-1);
+    if(isPenultimateIndex()) {
         printDelayedText(delayTime+(letterInterval),  "What does that spell?");
         printDelayedText(delayTime+(letterInterval*2), `${cheerTextArray.join(" ")}!`);
+        break;
     }
+
 }
