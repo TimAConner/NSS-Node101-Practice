@@ -1,3 +1,4 @@
+// Exercise #1
 const [,,...cheerTextArray] = process.argv;
 const cheerText = cheerTextArray.reduce((ac, cv) => ac.toUpperCase() + cv.toUpperCase()); 
 
