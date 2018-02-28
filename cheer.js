@@ -24,6 +24,6 @@ for(const letter of [...cheerText]){
     const {length: finalIndex} = cheerText;
     if(letterIndex === finalIndex) {
         printDelayedText(delayTime+(letterInterval),  "What does that spell?");
-        printDelayedText(delayTime+(letterInterval*2), `${cheerText}!`);
+        printDelayedText(delayTime+(letterInterval*2), `${cheerTextArray.join(" ")}!`);
     }
 }
