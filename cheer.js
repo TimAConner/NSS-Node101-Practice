@@ -10,7 +10,7 @@ if(cheerTextArray.length === 0) {
 const cheerText = cheerTextArray.reduce((ac, cv) => ac.toUpperCase() + cv.toUpperCase()); 
 
 const letterInterval = 1000;
-const vowelSounds = ["O", "H", "E", "N"]
+const vowelSounds = "AEIOFHLMNRSX";
 
 // Prints text into console log with delay
 const printDelayedText = (delay, text) => {
@@ -23,7 +23,7 @@ const printDelayedText = (delay, text) => {
 for(const letter of cheerText){
     var letterIndex = typeof letterIndex === "undefined" ? 0 : letterIndex += 1;
     delayTime = letterInterval * letterIndex;
-    printDelayedText(delayTime, `Give me ${vowelSounds.includes(letter) ? 'an' : 'a'} ${letter.toUpperCase()}!`);
+    printDelayedText(delayTime, `Give me ${vowelSounds.includes(letter.toUpperCase()) ? 'an' : 'a'} ${letter.toUpperCase()}!`);
 
     
     const {length: finalIndex} = cheerText;
