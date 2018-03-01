@@ -1,0 +1,27 @@
+{
+  "name": "NSS-Node101-Practice",
+  "version": "1.0.0",
+  "description": "This is basic Node.js practice done while attending the [Nashville Software School](http://nashvillesoftwareschool.com/).",
+  "main": "asynchronousFileSystem.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "read-file": "node asynchronousFileSystem.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimAConner/NSS-Node101-Practice.git"
+  },
+  "bin": {
+    "readfile": "asynchronousFileSystem.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimAConner/NSS-Node101-Practice/issues"
+  },
+  "homepage": "https://github.com/TimAConner/NSS-Node101-Practice#readme",
+  "dependencies": {
+    "event-stream": "^3.3.4"
+  }
+}
