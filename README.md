@@ -5,13 +5,15 @@ This is basic Node.js practice done while attending the [Nashville Software Scho
 
 ## List of Exercises
 
-### dictionarySeaercher.js Asynchronous File System Practice
+### Asynchronous File System Practice
 Practice using asynchronous functions to read from a file of words.
+1. dictionarySeaercher.js
+1. limit_to_ten.js
 
 ### asynchronousFileSystem.js Asynchronous File System Practice
 Practice using asynchronous reading of file system.
 
-### synchronousFileSystem.js Synchronous File System Practice
+###  synchronousFileSystem.js Synchronous File System Practice
 Practice using synchronous reading of file system.
 ### Cheer.js Exercise #1 Requirements
     Create a file called `cheer.js` that performs a cheer, using a named passed to it. Use as many of these as you can, even if the code you write isn't as compact or 'efficient' as you would like. This is more about trying out some ES6 than being succinct.
