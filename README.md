@@ -5,6 +5,9 @@ This is basic Node.js practice done while attending the [Nashville Software Scho
 
 ## List of Exercises
 
+## asynchronousFileSystem.js Asynchronous File System Practice
+Practice using asynchronous reading of file system.
+
 ## synchronousFileSystem.js Synchronous File System Practice
 Practice using synchronous reading of file system.
 ### Cheer.js Exercise #1 Requirements
